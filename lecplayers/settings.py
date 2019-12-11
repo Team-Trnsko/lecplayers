@@ -55,7 +55,7 @@ ROOT_URLCONF = 'lecplayers.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #Django sada zna lokaciju templates foldera
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

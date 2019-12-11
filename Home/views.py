@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views.generic import TemplateView #built-in TemplateView kako bi prikazali template
 
 # Create your views here.
-
-def homePageView(request):
-    return HttpResponse('Zdravo druže!') #kada se pozove funkcija homePageView vrati tekst
+class HomePageView(TemplateView):
+    template_name = 'home.html'

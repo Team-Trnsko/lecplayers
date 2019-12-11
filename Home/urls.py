@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import homePageView
+from .views import HomePageView
 
 urlpatterns = [
-    path('',homePageView, name='home') #ako user requesta homepage (''), onda koristi view koji se zove homePageView
+    path('', HomePageView.as_view(), name='home'),
 ]
