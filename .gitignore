@@ -1,0 +1,5 @@
+.vscode/settings.json
+.homepage/__pycache__/
+.lec/__pycache__/
+.login/__pycache__/
+.register/__pycache__/
